@@ -40,3 +40,7 @@ yarn build
 // </script>
 <script src="@scriptFile.js" />
 ```
+
+Cr. Chanachai Sappaso
+
+Enjoy Dev, Thank you.
