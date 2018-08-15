@@ -27,9 +27,9 @@ ADD #root to html
 yarn build
 ```
 
-- Rename @xxxx.js to @xxx.js at [ /build ] folder
+- Rename @xxxx.js to @xxx.js
 - Add \*.js to your projects folder
-- Change script
+- change script
 
 ```javascript
 // <script>window.devport = 3000;</script>
