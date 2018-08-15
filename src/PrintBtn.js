@@ -5,16 +5,19 @@ const PrintBtn = () => {
 	const printHandler = () => {
 		const KEY_CODE = document.querySelector("#key").value;
 		let DOC = document.querySelector("#tabNotification.active");
-		let DOC_HEIGHT = 1000;
+		let DOC_HEIGHT;
 		if (!DOC) {
 			DOC = document.querySelector("#tabAssess.active");
-			DOC_HEIGHT = 1000;
+			DOC_HEIGHT = 1550;
+		} else {
+			DOC = document.querySelector(".smart-form");
+			DOC_HEIGHT = 1200;
 		}
 		html2canvas(DOC, {
 			width: 2480,
 			height: DOC_HEIGHT,
-			windowWidth: 800,
-			windowHeight: 600,
+			windowWidth: 2480,
+			windowHeight: DOC_HEIGHT,
 			removeContainer: false,
 			async: false
 		}).then(canvas => {
